@@ -30,11 +30,6 @@ std::string nonce() {
   return tunnel.str();
 }
 
-Activity &Activity::setUrl(std::string_view url) {
-  activity_json["url"] = url;
-  return *this;
-}
-
 Activity &Activity::setTimestamps(const detail::timestamps_t &timestamps) {
 
   if (timestamps.start || timestamps.end) {

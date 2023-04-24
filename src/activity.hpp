@@ -42,7 +42,6 @@ public:
 
 struct Activity {
 
-  Activity &setUrl(std::string_view url);
   Activity &setTimestamps(const detail::timestamps_t &timestamps);
   Activity &setDetails(std::string_view details);
   Activity &setState(std::string_view state);
